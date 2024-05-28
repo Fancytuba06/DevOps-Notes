@@ -1,0 +1,23 @@
+TERRAFORM
+is an open-source Infrastructure as Code (IaC) tool created by HashiCorp.
+
+Terraform is a tool that helps you manage your computer infrastructure, like servers, databases, and networks, using code. Instead of clicking buttons or running commands manually, you write simple text files that describe what you want your infrastructure to look like, and Terraform makes it happen automatically
+
+
+
+terraform init (-upgrade)
+Downloads Provider Plugins [specified in conf file]
+Initializes the Backend:if configured a backend like s3 to store the state of your infrastructure
+Prepares the Working Directory: sets up the directory with the required files and directories that Terraform needs to manage your infrastructure.
+
+terraform  plan
+create an execution plan
+showing what actions Terraform will take in the config file
+see what changes will be made before actually applying them.
+
+terraform apply
+ will apply the changes said in config file including
+ creating updating deleting
+
+terraform destroy
+will remove all the resources defined in your      T t         terraform configuration.
