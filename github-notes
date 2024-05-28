@@ -1,0 +1,22 @@
+GIT = global information tracker
+
+git init=used to create a new git repo 
+git add README.md[moves changes from the working directory to the staging area ]
+git commit -m "first commit"[ used to save the staged changes to the local repository, ]
+git branch -M main[ used to rename the current branch to "main]
+git remote add origin https://github.com/Fancytuba06/test.git
+git remote -v ---to see the conected 
+git remote remove origin--to remove the connected
+git push -u origin main
+sudo -i yum install git -y
+to verify---- git --version
+git clone =clone the project to local
+git branch=shows current braches
+
+git merge =used to combine changes from one branch into another branch.
+
+git pull =used to update local repo with changes from a remote repo it fetches the chnges nd merges them into our current branch in one step combination of merge nd fetch 
+
+git fetch=used to update your local copy of a remote repository. It downloads the latest changes and updates the tracking branches, but it does not merge these changes into your working directory.
+
+git checkout= branch name to switch in between branches
