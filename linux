@@ -1,0 +1,32 @@
+linux -unix  
+
+redhat,linux,debian =yum 
+ubuntu =apt
+root(/),
+cd-change directory
+pwd-full path
+
+Root directories
+var       etc      temp  boot
+root     home  bin
+user     local    dev
+
+cd /---------to see inside root
+mkdir-make directory
+touch--to create file
+rm-remove
+cat----to view inside a file
+top---to view  memory and cpu usage live
+su-superuse
+ping=check if the host is rechable,used for fixing network problems
+curl = used for transferring data to or from a server ,downloading files[usefull for interacting with web api]
+free -m---to see memory
+swap
+wget url----to download
+sed -i 's/old_text/new_text/g' example.txt-----to change the text in vi file
+
+chmod-calculator.com
+chmod--to change permission(eg-chmod 740 filename)
+chmod 777 filename(all acess)read write execute
+755=r-w-e to owner of the file
+chmod700
