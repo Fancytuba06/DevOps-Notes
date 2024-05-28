@@ -1,0 +1,56 @@
+docker
+tool that helps developers package their applications into containers.
+ are like small, portable boxes that contain everything an application needs to run the code, libraries, and settings.
+This ensures that applications run  across different environments, from a developer's local machine to production servers.
+
+Consistency: Applications run the same in any environment.
+Isolation: Each application runs in its own separate container, avoiding conflicts.
+Efficiency: Containers are lightweight and start quickly compared to virtual machines.
+Portability: Containers can run on any system that supports Docker, making it easier to move applications across different environments.
+
+ Docker is used to improve the consistency, efficiency, and scalability of software development and deployment.
+
+ A Docker image is a read-only template that contains the instructions for creating a container. 
+It includes everything needed to run an application, such as the code, runtime, libraries, environment variables, and configuration files.
+
+A Docker container is a runnable instance of a Docker image. It represents the actual running application or service.
+
+by analysing log & logging into the cont.we can debug the containers
+itd -interactive terminal detach
+
+sudo -i
+apt update
+apt install docker.io
+docker pull httpd
+docker images---to list
+docker run -itd --name akhil -p "1234:80" httpd--to create a container [itd=used for debugging or interaction
+docker ps--to show created container
+docer ps -a ---to show every container
+docker exec -it "container id or name" /bin/bash-----to get inside a           container
+
+to build an apllicATIONs img
+
+git clone
+cd path
+add the docker file
+docker build -t [name image to create ] .
+after building it will be stored in local machine
+docker run -dp 3000:3000 image name
+
+docker container prune =to delete all the stopped container
+
+to run a docker-compose yaml 
+
+ docker-compose up -d
+docker-compose down -f path of the yml gile
+
+dockercompose file 
+version,services,img name,container name,environvemnt,network,port 
+
+docker volume=used to store data of a container 
+
+
+to push a docker image to a private repo
+
+docker tag imgname:latest usrname/reponame:tagname
+docker push usrname/reponame:tagname
